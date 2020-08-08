@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block content %}
+
+<!-- Place this tag in your head or just before your close body tag. -GH button -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<h1>A little intro</h1>
+
+<p>
+    My name is Jeff and I currently work as a Data & Applied Scientist at Microsoft. I also do a masters program part time through UC Berkeley. I am pretty passionate about tech, statistics, machine learning and deep learning! <br><br>
+
+    This website is a little project I'm working on in my spare time to show case a little about what I do, and some of my thoughts on some interesting topics. We all need a little corner on the internet to showcase ourselves, right? <br><br>
+
+    In my spare time, I enjoy yoga, running, stock trading, reading, traveling, and video games! <br><br>
+
+
+</p>
+    {{ page.body|richtext }}
+<!-- Place this tag where you want the button to render. -GH button-->
+<a class="github-button" href="https://github.com/superli3" aria-label="Follow @superli3 on GitHub">Follow @superli3</a>
+
+{% endblock %}
